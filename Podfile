@@ -7,6 +7,7 @@ target 'qrInvite' do
 
   # Pods for qrInvite
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
 
   target 'qrInviteTests' do
     inherit! :search_paths
