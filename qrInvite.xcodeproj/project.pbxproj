@@ -15,6 +15,7 @@
 		A32644122049E96600EECB60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32644102049E96600EECB60 /* LaunchScreen.storyboard */; };
 		A326441D2049E96600EECB60 /* qrInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326441C2049E96600EECB60 /* qrInviteTests.swift */; };
 		A32644282049ECCE00EECB60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32644272049ECCD00EECB60 /* GoogleService-Info.plist */; };
+		A35AE4212049F7370006716B /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35AE4202049F7370006716B /* signUpViewController.swift */; };
 		D543DDB32A665DE3DB04122C /* Pods_qrInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		A326441C2049E96600EECB60 /* qrInviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrInviteTests.swift; sourceTree = "<group>"; };
 		A326441E2049E96600EECB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32644272049ECCD00EECB60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A35AE4202049F7370006716B /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				A32644072049E96600EECB60 /* AppDelegate.swift */,
 				A32644092049E96600EECB60 /* ViewController.swift */,
 				A326440B2049E96600EECB60 /* Main.storyboard */,
+				A35AE4202049F7370006716B /* signUpViewController.swift */,
 				A326440E2049E96600EECB60 /* Assets.xcassets */,
 				A32644102049E96600EECB60 /* LaunchScreen.storyboard */,
 				A32644132049E96600EECB60 /* Info.plist */,
@@ -349,6 +352,7 @@
 			files = (
 				A326440A2049E96600EECB60 /* ViewController.swift in Sources */,
 				A32644082049E96600EECB60 /* AppDelegate.swift in Sources */,
+				A35AE4212049F7370006716B /* signUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
