@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AD81251C2D67AE01C3259E8 /* Pods_qrInviteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476E38D4F1884F5DFC039422 /* Pods_qrInviteTests.framework */; };
+		A32644082049E96600EECB60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32644072049E96600EECB60 /* AppDelegate.swift */; };
+		A326440A2049E96600EECB60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32644092049E96600EECB60 /* ViewController.swift */; };
+		A326440D2049E96600EECB60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A326440B2049E96600EECB60 /* Main.storyboard */; };
+		A326440F2049E96600EECB60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A326440E2049E96600EECB60 /* Assets.xcassets */; };
+		A32644122049E96600EECB60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32644102049E96600EECB60 /* LaunchScreen.storyboard */; };
+		A326441D2049E96600EECB60 /* qrInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326441C2049E96600EECB60 /* qrInviteTests.swift */; };
+		A32644282049ECCE00EECB60 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = A32644272049ECCD00EECB60 /* GoogleService-Info (1).plist */; };
+		D543DDB32A665DE3DB04122C /* Pods_qrInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A32644192049E96600EECB60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32643FC2049E96600EECB60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32644032049E96600EECB60;
+			remoteInfo = qrInvite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		476E38D4F1884F5DFC039422 /* Pods_qrInviteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrInviteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49329B3C2A1F9F9E8A7BB6A2 /* Pods-qrInvite.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrInvite.release.xcconfig"; path = "Pods/Target Support Files/Pods-qrInvite/Pods-qrInvite.release.xcconfig"; sourceTree = "<group>"; };
+		57498583E4A95BC5B1D85DE3 /* Pods-qrInvite.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrInvite.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qrInvite/Pods-qrInvite.debug.xcconfig"; sourceTree = "<group>"; };
+		6D133C62EC7DC459FE21D5E3 /* Pods-qrInviteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrInviteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-qrInviteTests/Pods-qrInviteTests.release.xcconfig"; sourceTree = "<group>"; };
+		712A987EDC46A4D314604D92 /* Pods-qrInviteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qrInviteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-qrInviteTests/Pods-qrInviteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A32644042049E96600EECB60 /* qrInvite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrInvite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32644072049E96600EECB60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A32644092049E96600EECB60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A326440C2049E96600EECB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A326440E2049E96600EECB60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A32644112049E96600EECB60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A32644132049E96600EECB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32644182049E96600EECB60 /* qrInviteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qrInviteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A326441C2049E96600EECB60 /* qrInviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrInviteTests.swift; sourceTree = "<group>"; };
+		A326441E2049E96600EECB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32644272049ECCD00EECB60 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A32644012049E96600EECB60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D543DDB32A665DE3DB04122C /* Pods_qrInvite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32644152049E96600EECB60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AD81251C2D67AE01C3259E8 /* Pods_qrInviteTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3587445DF29A1AE7A68A8C8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57498583E4A95BC5B1D85DE3 /* Pods-qrInvite.debug.xcconfig */,
+				49329B3C2A1F9F9E8A7BB6A2 /* Pods-qrInvite.release.xcconfig */,
+				712A987EDC46A4D314604D92 /* Pods-qrInviteTests.debug.xcconfig */,
+				6D133C62EC7DC459FE21D5E3 /* Pods-qrInviteTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		76A6BB339EBD05F10508B712 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */,
+				476E38D4F1884F5DFC039422 /* Pods_qrInviteTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A32643FB2049E96600EECB60 = {
+			isa = PBXGroup;
+			children = (
+				A32644062049E96600EECB60 /* qrInvite */,
+				A326441B2049E96600EECB60 /* qrInviteTests */,
+				A32644052049E96600EECB60 /* Products */,
+				3587445DF29A1AE7A68A8C8B /* Pods */,
+				76A6BB339EBD05F10508B712 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A32644052049E96600EECB60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A32644042049E96600EECB60 /* qrInvite.app */,
+				A32644182049E96600EECB60 /* qrInviteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A32644062049E96600EECB60 /* qrInvite */ = {
+			isa = PBXGroup;
+			children = (
+				A32644072049E96600EECB60 /* AppDelegate.swift */,
+				A32644092049E96600EECB60 /* ViewController.swift */,
+				A326440B2049E96600EECB60 /* Main.storyboard */,
+				A326440E2049E96600EECB60 /* Assets.xcassets */,
+				A32644102049E96600EECB60 /* LaunchScreen.storyboard */,
+				A32644132049E96600EECB60 /* Info.plist */,
+				A32644272049ECCD00EECB60 /* GoogleService-Info (1).plist */,
+			);
+			path = qrInvite;
+			sourceTree = "<group>";
+		};
+		A326441B2049E96600EECB60 /* qrInviteTests */ = {
+			isa = PBXGroup;
+			children = (
+				A326441C2049E96600EECB60 /* qrInviteTests.swift */,
+				A326441E2049E96600EECB60 /* Info.plist */,
+			);
+			path = qrInviteTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A32644032049E96600EECB60 /* qrInvite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32644212049E96600EECB60 /* Build configuration list for PBXNativeTarget "qrInvite" */;
+			buildPhases = (
+				F228502B9E0D39AC62CEE0AA /* [CP] Check Pods Manifest.lock */,
+				A32644002049E96600EECB60 /* Sources */,
+				A32644012049E96600EECB60 /* Frameworks */,
+				A32644022049E96600EECB60 /* Resources */,
+				9ECCBC28E8B84527AB63379F /* [CP] Embed Pods Frameworks */,
+				2F4C953F70F5179E88C99E50 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = qrInvite;
+			productName = qrInvite;
+			productReference = A32644042049E96600EECB60 /* qrInvite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A32644172049E96600EECB60 /* qrInviteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32644242049E96600EECB60 /* Build configuration list for PBXNativeTarget "qrInviteTests" */;
+			buildPhases = (
+				50E562F0BE25512F849FDB53 /* [CP] Check Pods Manifest.lock */,
+				A32644142049E96600EECB60 /* Sources */,
+				A32644152049E96600EECB60 /* Frameworks */,
+				A32644162049E96600EECB60 /* Resources */,
+				C522E47D01BF89BF31EA0726 /* [CP] Embed Pods Frameworks */,
+				7C164B32D650F0AFA8824AF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A326441A2049E96600EECB60 /* PBXTargetDependency */,
+			);
+			name = qrInviteTests;
+			productName = qrInviteTests;
+			productReference = A32644182049E96600EECB60 /* qrInviteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A32643FC2049E96600EECB60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Nexus;
+				TargetAttributes = {
+					A32644032049E96600EECB60 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					A32644172049E96600EECB60 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A32644032049E96600EECB60;
+					};
+				};
+			};
+			buildConfigurationList = A32643FF2049E96600EECB60 /* Build configuration list for PBXProject "qrInvite" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A32643FB2049E96600EECB60;
+			productRefGroup = A32644052049E96600EECB60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A32644032049E96600EECB60 /* qrInvite */,
+				A32644172049E96600EECB60 /* qrInviteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A32644022049E96600EECB60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32644122049E96600EECB60 /* LaunchScreen.storyboard in Resources */,
+				A326440F2049E96600EECB60 /* Assets.xcassets in Resources */,
+				A326440D2049E96600EECB60 /* Main.storyboard in Resources */,
+				A32644282049ECCE00EECB60 /* GoogleService-Info (1).plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32644162049E96600EECB60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F4C953F70F5179E88C99E50 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qrInvite/Pods-qrInvite-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50E562F0BE25512F849FDB53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qrInviteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C164B32D650F0AFA8824AF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qrInviteTests/Pods-qrInviteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ECCBC28E8B84527AB63379F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-qrInvite/Pods-qrInvite-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qrInvite/Pods-qrInvite-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C522E47D01BF89BF31EA0726 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-qrInviteTests/Pods-qrInviteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F228502B9E0D39AC62CEE0AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-qrInvite-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A32644002049E96600EECB60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A326440A2049E96600EECB60 /* ViewController.swift in Sources */,
+				A32644082049E96600EECB60 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32644142049E96600EECB60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A326441D2049E96600EECB60 /* qrInviteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A326441A2049E96600EECB60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32644032049E96600EECB60 /* qrInvite */;
+			targetProxy = A32644192049E96600EECB60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A326440B2049E96600EECB60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A326440C2049E96600EECB60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A32644102049E96600EECB60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32644112049E96600EECB60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A326441F2049E96600EECB60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A32644202049E96600EECB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A32644222049E96600EECB60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57498583E4A95BC5B1D85DE3 /* Pods-qrInvite.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S2QAD69CV;
+				INFOPLIST_FILE = qrInvite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nexus.qrInvite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A32644232049E96600EECB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49329B3C2A1F9F9E8A7BB6A2 /* Pods-qrInvite.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S2QAD69CV;
+				INFOPLIST_FILE = qrInvite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nexus.qrInvite;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A32644252049E96600EECB60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 712A987EDC46A4D314604D92 /* Pods-qrInviteTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S2QAD69CV;
+				INFOPLIST_FILE = qrInviteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nexus.qrInviteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qrInvite.app/qrInvite";
+			};
+			name = Debug;
+		};
+		A32644262049E96600EECB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D133C62EC7DC459FE21D5E3 /* Pods-qrInviteTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5S2QAD69CV;
+				INFOPLIST_FILE = qrInviteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Nexus.qrInviteTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/qrInvite.app/qrInvite";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A32643FF2049E96600EECB60 /* Build configuration list for PBXProject "qrInvite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A326441F2049E96600EECB60 /* Debug */,
+				A32644202049E96600EECB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32644212049E96600EECB60 /* Build configuration list for PBXNativeTarget "qrInvite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32644222049E96600EECB60 /* Debug */,
+				A32644232049E96600EECB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32644242049E96600EECB60 /* Build configuration list for PBXNativeTarget "qrInviteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32644252049E96600EECB60 /* Debug */,
+				A32644262049E96600EECB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A32643FC2049E96600EECB60 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_qrInviteTests {
+  umbrella header "Pods-qrInviteTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
