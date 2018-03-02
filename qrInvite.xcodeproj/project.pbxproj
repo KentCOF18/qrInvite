@@ -14,7 +14,7 @@
 		A326440F2049E96600EECB60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A326440E2049E96600EECB60 /* Assets.xcassets */; };
 		A32644122049E96600EECB60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32644102049E96600EECB60 /* LaunchScreen.storyboard */; };
 		A326441D2049E96600EECB60 /* qrInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326441C2049E96600EECB60 /* qrInviteTests.swift */; };
-		A32644282049ECCE00EECB60 /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = A32644272049ECCD00EECB60 /* GoogleService-Info (1).plist */; };
+		A32644282049ECCE00EECB60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32644272049ECCD00EECB60 /* GoogleService-Info.plist */; };
 		D543DDB32A665DE3DB04122C /* Pods_qrInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,7 @@
 		A32644182049E96600EECB60 /* qrInviteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qrInviteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A326441C2049E96600EECB60 /* qrInviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrInviteTests.swift; sourceTree = "<group>"; };
 		A326441E2049E96600EECB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A32644272049ECCD00EECB60 /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		A32644272049ECCD00EECB60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -117,9 +117,9 @@
 				A326440E2049E96600EECB60 /* Assets.xcassets */,
 				A32644102049E96600EECB60 /* LaunchScreen.storyboard */,
 				A32644132049E96600EECB60 /* Info.plist */,
-				A32644272049ECCD00EECB60 /* GoogleService-Info (1).plist */,
+				A32644272049ECCD00EECB60 /* GoogleService-Info.plist */,
 			);
-			path = qrInvite;
+			name = qrInvite;
 			sourceTree = "<group>";
 		};
 		A326441B2049E96600EECB60 /* qrInviteTests */ = {
@@ -128,7 +128,7 @@
 				A326441C2049E96600EECB60 /* qrInviteTests.swift */,
 				A326441E2049E96600EECB60 /* Info.plist */,
 			);
-			path = qrInviteTests;
+			name = qrInviteTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,7 +223,7 @@
 				A32644122049E96600EECB60 /* LaunchScreen.storyboard in Resources */,
 				A326440F2049E96600EECB60 /* Assets.xcassets in Resources */,
 				A326440D2049E96600EECB60 /* Main.storyboard in Resources */,
-				A32644282049ECCE00EECB60 /* GoogleService-Info (1).plist in Resources */,
+				A32644282049ECCE00EECB60 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S2QAD69CV;
-				INFOPLIST_FILE = qrInvite/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nexus.qrInvite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5S2QAD69CV;
-				INFOPLIST_FILE = qrInvite/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Nexus.qrInvite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
