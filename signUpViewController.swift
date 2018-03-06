@@ -13,6 +13,7 @@ class signUpViewController: UIViewController {
 
     @IBOutlet weak var phoneNumTextField: UITextField!
     
+    @IBOutlet weak var signInButton: UIButton!
     @IBAction func signUpButton_TouchUpInside(_ sender: Any) {
         sendVerificationCode()
     }
@@ -22,14 +23,17 @@ class signUpViewController: UIViewController {
         
         // Do any additional setup after loading the view.
     }
-    
+
     func sendVerificationCode() {
         let phoneNumber = "+1" + (phoneNumTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
         
         PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error ) in
             if let error = error {
-                UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
                 print("Phone number error" + error.localizedDescription)
+            }
+            else {
+            UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
+            self.performSegue(withIdentifier: "signedIn", sender: nil)
             }
         }
     }

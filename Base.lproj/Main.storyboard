@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,6 +25,7 @@
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="signUpButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcM-Ml-svC"/>
+                                    <segue destination="uA7-eO-THi" kind="presentation" identifier="signedIn" id="oG0-dw-ua7"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="QRvite" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHB-Zw-YIH">
@@ -53,11 +55,64 @@
                     </view>
                     <connections>
                         <outlet property="phoneNumTextField" destination="ihh-5P-XeN" id="sxv-YD-qLl"/>
+                        <outlet property="signInButton" destination="cFW-Xz-RYL" id="NQU-cq-oxl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Verify View Controller-->
+        <scene sceneID="Fbt-hi-HqU">
+            <objects>
+                <viewController storyboardIdentifier="verifyCode" id="uA7-eO-THi" customClass="verifyViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="msK-jT-HqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verify code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZJ-gr-abt">
+                                <rect key="frame" x="16" y="319" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please verify the code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-c7-nn4">
+                                <rect key="frame" x="0.0" y="60" width="375" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="wk1-6j-PQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-xH-Ef3">
+                                <rect key="frame" x="121" y="460" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="verifyButton_TouchUpInside:" destination="uA7-eO-THi" eventType="touchUpInside" id="waG-F9-BHQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GrM-c7-nn4" firstAttribute="top" secondItem="eeN-5H-lNL" secondAttribute="top" constant="40" id="8e0-d6-hCF"/>
+                            <constraint firstItem="UZJ-gr-abt" firstAttribute="centerY" secondItem="msK-jT-HqZ" secondAttribute="centerY" id="Ptv-W7-vmD"/>
+                            <constraint firstItem="UZJ-gr-abt" firstAttribute="leading" secondItem="msK-jT-HqZ" secondAttribute="leadingMargin" id="Zf5-u4-GOm"/>
+                            <constraint firstItem="UZJ-gr-abt" firstAttribute="centerX" secondItem="GrM-c7-nn4" secondAttribute="centerX" id="l4p-O8-1ep"/>
+                            <constraint firstItem="GrM-c7-nn4" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" id="r2i-1R-jSX"/>
+                            <constraint firstItem="GrM-c7-nn4" firstAttribute="trailing" secondItem="eeN-5H-lNL" secondAttribute="trailing" id="sBM-bv-xkF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eeN-5H-lNL"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeTextField" destination="UZJ-gr-abt" id="fr2-z9-QOH"/>
+                        <outlet property="verifyButton" destination="ymn-xH-Ef3" id="LMx-87-7Gh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RVd-3n-ZCx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112.8" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>
