@@ -18,6 +18,7 @@
 		A35AE4212049F7370006716B /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35AE4202049F7370006716B /* signUpViewController.swift */; };
 		A3818AF6204E1ACD00DB7E37 /* verifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3818AF5204E1ACD00DB7E37 /* verifyViewController.swift */; };
 		A3D88E3B20532D780029776F /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D88E3A20532D780029776F /* profile.storyboard */; };
+		A3D88E3D2053327C0029776F /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D88E3C2053327C0029776F /* profileViewController.swift */; };
 		D543DDB32A665DE3DB04122C /* Pods_qrInvite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		A35AE4202049F7370006716B /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		A3818AF5204E1ACD00DB7E37 /* verifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyViewController.swift; sourceTree = "<group>"; };
 		A3D88E3A20532D780029776F /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
+		A3D88E3C2053327C0029776F /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		BB74BA60B5A17FA200ED62B2 /* Pods_qrInvite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qrInvite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A32644072049E96600EECB60 /* AppDelegate.swift */,
+				A3D88E3C2053327C0029776F /* profileViewController.swift */,
 				A3D88E3A20532D780029776F /* profile.storyboard */,
 				A3818AF5204E1ACD00DB7E37 /* verifyViewController.swift */,
 				A32644092049E96600EECB60 /* ViewController.swift */,
@@ -362,6 +365,7 @@
 				A326440A2049E96600EECB60 /* ViewController.swift in Sources */,
 				A3818AF6204E1ACD00DB7E37 /* verifyViewController.swift in Sources */,
 				A32644082049E96600EECB60 /* AppDelegate.swift in Sources */,
+				A3D88E3D2053327C0029776F /* profileViewController.swift in Sources */,
 				A35AE4212049F7370006716B /* signUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

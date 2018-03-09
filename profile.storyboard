@@ -15,10 +15,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="1Sj-pu-ChD">
             <objects>
-                <viewController id="rMN-A6-Uph" sceneMemberID="viewController">
+                <viewController id="rMN-A6-Uph" customClass="profileViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Im-Rz-HIu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,6 +38,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ga6-bH-xEK"/>
                     </view>
+                    <connections>
+                        <outlet property="myProfileText" destination="VVm-tR-mQA" id="V4g-DQ-MVG"/>
+                        <outlet property="qrImage" destination="mAd-AX-u5h" id="60L-gL-YyS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFq-Aw-Hh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

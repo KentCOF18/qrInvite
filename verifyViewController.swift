@@ -48,11 +48,23 @@ class verifyViewController: UIViewController {
             self.present(vc, animated: true, completion: {
                 
             })
+            self.storeQRCode(phone: phone!)
         }
         
         
         
        
+    }
+    func storeQRCode(phone: String) {
+        let uid = Auth.auth().currentUser?.uid
+        let ref = Database.database().reference()
+        let userRef = ref.child("users").child(uid!)
+        let textMessage = "Thank you for scanning into the event!"
+        let urlTextMessage = textMessage.replacingOccurrences(of: " ", with: "%20")
+        let sms = ("SMSTO:\(phone):\(urlTextMessage)")
+        
+        let phoneURL = ("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=\(sms)")
+        userRef.setValue(["smsURL": phoneURL])
     }
     
 }
