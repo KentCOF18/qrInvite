@@ -26,6 +26,7 @@ class signUpViewController: UIViewController {
 
     func sendVerificationCode() {
         let phoneNumber = "+1" + (phoneNumTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+        UserDefaults.standard.set(phoneNumber, forKey: "phoneNumber")
         
         PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error ) in
             if let error = error {

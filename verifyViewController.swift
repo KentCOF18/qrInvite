@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseDatabase
 
 class verifyViewController: UIViewController {
 
@@ -15,6 +16,8 @@ class verifyViewController: UIViewController {
         let code = codeTextField.text
         verifyCode(code: code!)
     }
+    
+    
     @IBOutlet weak var verifyButton: UIButton!
     @IBOutlet weak var codeTextField: UITextField!
     override func viewDidLoad() {
@@ -30,12 +33,21 @@ class verifyViewController: UIViewController {
         let credential = PhoneAuthProvider.provider().credential(
             withVerificationID: verificationID!,
             verificationCode: code)
-        Auth.auth().signIn(with: credential) { (user,error ) in
+        Auth.auth().signIn(with: credential) { (user: User?,error ) in
             if let error = error {
                 
             }
+            var ref: DatabaseReference
+            ref = Database.database().reference()
             print("The user is signed in and authenticated")
+            let uid = user?.uid
+            let phone = UserDefaults.standard.string(forKey: "phoneNumber")
+            ref.child("users").child(uid!).setValue(["username": phone])
         }
+        
+        
+        
+       
     }
-
+    
 }
