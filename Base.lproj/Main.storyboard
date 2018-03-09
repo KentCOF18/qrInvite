@@ -86,9 +86,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-xH-Ef3">
-                                <rect key="frame" x="121" y="460" width="46" height="30"/>
+                                <rect key="frame" x="167" y="424" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Verify"/>
                                 <connections>
                                     <action selector="verifyButton_TouchUpInside:" destination="uA7-eO-THi" eventType="touchUpInside" id="waG-F9-BHQ"/>
                                 </connections>

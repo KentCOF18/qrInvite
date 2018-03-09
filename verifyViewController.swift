@@ -43,6 +43,11 @@ class verifyViewController: UIViewController {
             let uid = user?.uid
             let phone = UserDefaults.standard.string(forKey: "phoneNumber")
             ref.child("users").child(uid!).setValue(["username": phone])
+            let sb: UIStoryboard = UIStoryboard(name: "profile", bundle: nil)
+            let vc: UIViewController = sb.instantiateInitialViewController()!
+            self.present(vc, animated: true, completion: {
+                
+            })
         }
         
         
