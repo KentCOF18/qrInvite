@@ -53,7 +53,16 @@
                                 <state key="normal" title="Sign up"/>
                                 <connections>
                                     <action selector="signUpButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcM-Ml-svC"/>
-                                    <segue destination="uA7-eO-THi" kind="presentation" identifier="signedIn" id="oG0-dw-ua7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH1-Gc-3DF">
+                                <rect key="frame" x="37" y="532" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Admin"/>
+                                <connections>
+                                    <action selector="admin_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dl-uP-l9P"/>
+                                    <segue destination="e72-1I-aZy" kind="presentation" id="dJC-Dv-Aki"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +70,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="adminButton" destination="ZH1-Gc-3DF" id="Tvj-dX-gI7"/>
                         <outlet property="phoneNumTextField" destination="ihh-5P-XeN" id="sxv-YD-qLl"/>
                         <outlet property="signInButton" destination="cFW-Xz-RYL" id="NQU-cq-oxl"/>
                     </connections>
@@ -68,6 +78,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+        <!--Admin View Controller-->
+        <scene sceneID="aXh-1T-wkf">
+            <objects>
+                <viewController id="e72-1I-aZy" customClass="adminViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jkH-wY-MBX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-1C-bLH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-Nn-yhJ">
+                                <rect key="frame" x="16" y="485" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gj0-SY-ADT"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="CGg-1C-bLH" id="2h6-03-nX2"/>
+                        <outlet property="counterLabel" destination="ybh-Nn-yhJ" id="ZF8-Xv-a0b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmb-Ep-iYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="938.68065967016503"/>
         </scene>
         <!--Verify View Controller-->
         <scene sceneID="Fbt-hi-HqU">
