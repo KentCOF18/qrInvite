@@ -18,13 +18,13 @@
         <!--Profile View Controller-->
         <scene sceneID="1Sj-pu-ChD">
             <objects>
-                <viewController id="rMN-A6-Uph" customClass="profileViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="rMN-A6-Uph" customClass="profileViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Im-Rz-HIu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-tR-mQA">
-                                <rect key="frame" x="0.0" y="30" width="375" height="35"/>
+                                <rect key="frame" x="129" y="20" width="116.5" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="erq-KW-zMT"/>
                                 </constraints>
@@ -33,18 +33,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AX-u5h">
-                                <rect key="frame" x="60" y="238" width="254" height="191"/>
+                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="CQR-Mq-zkY"/>
+                                    <constraint firstAttribute="height" constant="150" id="mbX-gA-6pe"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerX" secondItem="3Im-Rz-HIu" secondAttribute="centerX" id="JF6-sb-4UF"/>
-                            <constraint firstItem="mAd-AX-u5h" firstAttribute="leading" secondItem="ga6-bH-xEK" secondAttribute="leading" constant="60" id="alz-xy-CsN"/>
-                            <constraint firstItem="ga6-bH-xEK" firstAttribute="bottom" secondItem="mAd-AX-u5h" secondAttribute="bottom" constant="238" id="e4u-q0-tTf"/>
-                            <constraint firstItem="VVm-tR-mQA" firstAttribute="leading" secondItem="3Im-Rz-HIu" secondAttribute="leading" id="nhV-MR-7Dv"/>
-                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerX" secondItem="VVm-tR-mQA" secondAttribute="centerX" id="s7u-mL-Ng0"/>
-                            <constraint firstItem="VVm-tR-mQA" firstAttribute="top" secondItem="ga6-bH-xEK" secondAttribute="top" constant="10" id="sKy-S9-5on"/>
-                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerY" secondItem="3Im-Rz-HIu" secondAttribute="centerY" id="skj-eH-LN5"/>
+                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerY" secondItem="3Im-Rz-HIu" secondAttribute="centerY" id="jxn-rm-Ue0"/>
+                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerX" secondItem="3Im-Rz-HIu" secondAttribute="centerX" id="kT2-00-rRz"/>
+                            <constraint firstItem="VVm-tR-mQA" firstAttribute="leading" secondItem="3Im-Rz-HIu" secondAttribute="leading" constant="129" id="nhV-MR-7Dv"/>
+                            <constraint firstItem="VVm-tR-mQA" firstAttribute="top" secondItem="ga6-bH-xEK" secondAttribute="top" id="sKy-S9-5on"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ga6-bH-xEK"/>
                     </view>
