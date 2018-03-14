@@ -23,19 +23,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AX-u5h">
-                                <rect key="frame" x="60" y="238" width="254" height="191"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-tR-mQA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-tR-mQA">
                                 <rect key="frame" x="0.0" y="30" width="375" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="erq-KW-zMT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AX-u5h">
+                                <rect key="frame" x="60" y="238" width="254" height="191"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerX" secondItem="3Im-Rz-HIu" secondAttribute="centerX" id="JF6-sb-4UF"/>
+                            <constraint firstItem="mAd-AX-u5h" firstAttribute="leading" secondItem="ga6-bH-xEK" secondAttribute="leading" constant="60" id="alz-xy-CsN"/>
+                            <constraint firstItem="ga6-bH-xEK" firstAttribute="bottom" secondItem="mAd-AX-u5h" secondAttribute="bottom" constant="238" id="e4u-q0-tTf"/>
+                            <constraint firstItem="VVm-tR-mQA" firstAttribute="leading" secondItem="3Im-Rz-HIu" secondAttribute="leading" id="nhV-MR-7Dv"/>
+                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerX" secondItem="VVm-tR-mQA" secondAttribute="centerX" id="s7u-mL-Ng0"/>
+                            <constraint firstItem="VVm-tR-mQA" firstAttribute="top" secondItem="ga6-bH-xEK" secondAttribute="top" constant="10" id="sKy-S9-5on"/>
+                            <constraint firstItem="mAd-AX-u5h" firstAttribute="centerY" secondItem="3Im-Rz-HIu" secondAttribute="centerY" id="skj-eH-LN5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ga6-bH-xEK"/>
                     </view>
                     <connections>
