@@ -58,7 +58,7 @@ class verifyViewController: UIViewController {
     func storeQRCode(phone: String) {
         let uid = Auth.auth().currentUser?.uid
         let ref = Database.database().reference()
-        let userRef = ref.child("users").child(uid!)
+        let userRef = ref.child("users").child(uid!).child("url")
         let textMessage = "Thank you for scanning into the event!"
         let urlTextMessage = textMessage.replacingOccurrences(of: " ", with: "%20")
         let sms = ("SMSTO:\(phone):\(urlTextMessage)")
