@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-tR-mQA">
-                                <rect key="frame" x="129" y="20" width="116.5" height="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Pass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVm-tR-mQA">
+                                <rect key="frame" x="140.5" y="20" width="93.5" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="erq-KW-zMT"/>
                                 </constraints>
@@ -33,18 +33,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-AX-u5h">
-                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="CQR-Mq-zkY"/>
-                                    <constraint firstAttribute="height" constant="150" id="mbX-gA-6pe"/>
+                                    <constraint firstAttribute="height" constant="300" id="740-Zl-MJD"/>
+                                    <constraint firstAttribute="width" constant="300" id="kwW-x2-eX1"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="VVm-tR-mQA" firstAttribute="centerX" secondItem="3Im-Rz-HIu" secondAttribute="centerX" id="QY6-Ba-Oxz"/>
                             <constraint firstItem="mAd-AX-u5h" firstAttribute="centerY" secondItem="3Im-Rz-HIu" secondAttribute="centerY" id="jxn-rm-Ue0"/>
                             <constraint firstItem="mAd-AX-u5h" firstAttribute="centerX" secondItem="3Im-Rz-HIu" secondAttribute="centerX" id="kT2-00-rRz"/>
-                            <constraint firstItem="VVm-tR-mQA" firstAttribute="leading" secondItem="3Im-Rz-HIu" secondAttribute="leading" constant="129" id="nhV-MR-7Dv"/>
                             <constraint firstItem="VVm-tR-mQA" firstAttribute="top" secondItem="ga6-bH-xEK" secondAttribute="top" id="sKy-S9-5on"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ga6-bH-xEK"/>
