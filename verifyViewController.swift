@@ -12,19 +12,18 @@ import FirebaseDatabase
 
 class verifyViewController: UIViewController {
 
+    @IBOutlet weak var codeTextField: UITextField!
+    @IBOutlet weak var verifyButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBAction func verifyButton_TouchUpInside(_ sender: Any) {
         let code = codeTextField.text
         verifyCode(code: code!)
     }
     
     
-    @IBOutlet weak var verifyButton: UIButton!
-    @IBOutlet weak var codeTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -59,12 +58,13 @@ class verifyViewController: UIViewController {
         let uid = Auth.auth().currentUser?.uid
         let ref = Database.database().reference()
         let userRef = ref.child("users").child(uid!).child("url")
-        let textMessage = "Thank you for scanning into the event!"
-        let urlTextMessage = textMessage.replacingOccurrences(of: " ", with: "%20")
-        let sms = ("SMSTO:\(phone):\(urlTextMessage)")
+        let textMessage = nameTextField.text
+        let urlTextMessage = textMessage?.replacingOccurrences(of: " ", with: "%20")
+        let sms = ("SMSTO:\(phone):\(String(describing: urlTextMessage))")
         
         let phoneURL = ("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=\(sms)")
         userRef.setValue(["smsURL": phoneURL])
     }
+    
     
 }
