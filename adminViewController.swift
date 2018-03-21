@@ -15,6 +15,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var counterLabel: UILabel!
     
+    @IBOutlet weak var infoLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -48,11 +49,13 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
 
         // Do any additional setup after loading the view.
     }
-    
+    var count = 0
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count == 0 {
             print("No Input Detected")
-            print("Scanned")
+            count = count + 1
+            let countString = String(count)
+            counterLabel.text = countString
             return
         }
         
@@ -71,7 +74,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         view.addSubview(codeFrame)
         // Create some label and assign returned string value to it
-        counterLabel.text = stringCodeValue
+        infoLabel.text = stringCodeValue
         // Perform further logic needed (ex. redirect to other ViewController)
         
     }
