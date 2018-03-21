@@ -23,6 +23,7 @@ class verifyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }
@@ -49,9 +50,6 @@ class verifyViewController: UIViewController {
             })
             self.storeQRCode(phone: phone!)
         }
-        
-        
-        
        
     }
     func storeQRCode(phone: String) {
@@ -65,6 +63,4 @@ class verifyViewController: UIViewController {
         let phoneURL = ("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=\(sms)")
         userRef.setValue(["smsURL": phoneURL])
     }
-    
-    
 }
