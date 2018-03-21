@@ -8,13 +8,15 @@
 
 import UIKit
 import AVFoundation
+import MessageUI
 
-class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate, MFMessageComposeViewControllerDelegate {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
 
     @IBOutlet weak var cameraView: UIView!
     @IBOutlet weak var counterLabel: UILabel!
     
+    @IBOutlet weak var infoLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
       
@@ -48,11 +50,16 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
 
         // Do any additional setup after loading the view.
     }
-    
+    var count = 0
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count == 0 {
             print("No Input Detected")
-            print("Scanned")
+            count = count + 1
+            if(count % 10 == 0) {
+                sendCountMessage(total: count)
+            }
+            let countString = String(count)
+            counterLabel.text = countString
             return
         }
         
@@ -71,9 +78,35 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         view.addSubview(codeFrame)
         // Create some label and assign returned string value to it
-        counterLabel.text = stringCodeValue
+        infoLabel.text = stringCodeValue
         // Perform further logic needed (ex. redirect to other ViewController)
         
+    }
+    
+    func sendCountMessage(total: Int) {
+        let messageVC = MFMessageComposeViewController()
+        
+        messageVC.body = "\(total) people have signed in";
+        messageVC.recipients = ["+16147257253"]
+        messageVC.messageComposeDelegate = self;
+        
+        self.present(messageVC, animated: false, completion: nil)
+    }
+    
+    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        switch (result) {
+        case .cancelled:
+            print("Message was cancelled")
+            self.dismiss(animated: true, completion: nil)
+        case .failed:
+            print("Message failed")
+            self.dismiss(animated: true, completion: nil)
+        case .sent:
+            print("Message was sent")
+            self.dismiss(animated: true, completion: nil)
+        default:
+            break;
+        }
     }
 
 
