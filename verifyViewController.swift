@@ -12,6 +12,7 @@ import FirebaseDatabase
 
 class verifyViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var verifyButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -24,7 +25,7 @@ class verifyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-
+        errorLabel.isHidden = true
         // Do any additional setup after loading the view.
     }
 
@@ -34,9 +35,10 @@ class verifyViewController: UIViewController {
             withVerificationID: verificationID!,
             verificationCode: code)
         Auth.auth().signIn(with: credential) { (user: User?,error ) in
-            if let error = error {
-                
+            if error != nil {
+                self.errorLabel.isHidden = false
             }
+            else {
             var ref: DatabaseReference
             ref = Database.database().reference()
             print("The user is signed in and authenticated")
@@ -49,6 +51,7 @@ class verifyViewController: UIViewController {
                 
             })
             self.storeQRCode(phone: phone!)
+            }
         }
        
     }

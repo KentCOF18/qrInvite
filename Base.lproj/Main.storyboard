@@ -194,13 +194,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please verify the code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrM-c7-nn4">
-                                <rect key="frame" x="0.0" y="51" width="375" height="35"/>
+                                <rect key="frame" x="0.0" y="51" width="375" height="36.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="36.5" id="9SM-xo-nxs"/>
-                                    <constraint firstAttribute="height" constant="35" id="wk1-6j-PQ1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="18"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter the verification code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-W2-gCz">
+                                <rect key="frame" x="62" y="206" width="250" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -222,6 +228,7 @@
                     </view>
                     <connections>
                         <outlet property="codeTextField" destination="UZJ-gr-abt" id="VAO-o1-OkK"/>
+                        <outlet property="errorLabel" destination="9Qp-W2-gCz" id="rqu-en-hHd"/>
                         <outlet property="nameTextField" destination="2zi-w5-78n" id="7uA-6Y-0jw"/>
                         <outlet property="verifyButton" destination="ymn-xH-Ef3" id="fwz-fr-TtR"/>
                     </connections>
