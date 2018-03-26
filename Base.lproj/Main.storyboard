@@ -165,16 +165,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verify code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZJ-gr-abt">
-                                <rect key="frame" x="62" y="318" width="250" height="30"/>
+                                <rect key="frame" x="62" y="312" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-xH-Ef3">
-                                <rect key="frame" x="62" y="428" width="250" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5BG-ta-sNt"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-xH-Ef3">
+                                <rect key="frame" x="16" y="422" width="343" height="36"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <state key="normal" title="Verify">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -184,7 +181,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First and Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2zi-w5-78n">
-                                <rect key="frame" x="62" y="255" width="250" height="30"/>
+                                <rect key="frame" x="62" y="249" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="A5A-Cq-tVB"/>
                                 </constraints>
@@ -201,9 +198,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter the verification code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-W2-gCz">
-                                <rect key="frame" x="62" y="206" width="250" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qp-W2-gCz">
+                                <rect key="frame" x="16" y="196" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="JOK-Mq-vsw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
                                 <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -214,13 +213,17 @@
                             <constraint firstItem="eeN-5H-lNL" firstAttribute="bottom" secondItem="ymn-xH-Ef3" secondAttribute="bottom" constant="209" id="4wn-Od-GnT"/>
                             <constraint firstItem="2zi-w5-78n" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" constant="62" id="A3I-g7-1bA"/>
                             <constraint firstItem="eeN-5H-lNL" firstAttribute="trailing" secondItem="2zi-w5-78n" secondAttribute="trailing" constant="63" id="I1W-km-WiC"/>
+                            <constraint firstItem="2zi-w5-78n" firstAttribute="top" secondItem="9Qp-W2-gCz" secondAttribute="bottom" constant="28" id="OFu-45-DGZ"/>
                             <constraint firstItem="GrM-c7-nn4" firstAttribute="top" secondItem="eeN-5H-lNL" secondAttribute="top" constant="31" id="Teu-dW-GWf"/>
+                            <constraint firstItem="9Qp-W2-gCz" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" constant="16" id="bF7-4t-MuZ"/>
                             <constraint firstItem="eeN-5H-lNL" firstAttribute="trailing" secondItem="UZJ-gr-abt" secondAttribute="trailing" constant="63" id="cNK-p4-LyM"/>
+                            <constraint firstItem="ymn-xH-Ef3" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" constant="16" id="dwO-JT-HCM"/>
                             <constraint firstItem="UZJ-gr-abt" firstAttribute="top" secondItem="2zi-w5-78n" secondAttribute="bottom" constant="33" id="gOv-FW-uSi"/>
                             <constraint firstItem="ymn-xH-Ef3" firstAttribute="top" secondItem="UZJ-gr-abt" secondAttribute="bottom" constant="80" id="hKy-9L-jSN"/>
                             <constraint firstItem="GrM-c7-nn4" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" id="r2i-1R-jSX"/>
                             <constraint firstItem="GrM-c7-nn4" firstAttribute="trailing" secondItem="eeN-5H-lNL" secondAttribute="trailing" id="sBM-bv-xkF"/>
-                            <constraint firstItem="ymn-xH-Ef3" firstAttribute="centerX" secondItem="msK-jT-HqZ" secondAttribute="centerX" id="svW-yj-ykb"/>
+                            <constraint firstItem="eeN-5H-lNL" firstAttribute="trailing" secondItem="9Qp-W2-gCz" secondAttribute="trailing" constant="16" id="scX-uW-bbJ"/>
+                            <constraint firstItem="eeN-5H-lNL" firstAttribute="trailing" secondItem="ymn-xH-Ef3" secondAttribute="trailing" constant="16" id="wON-LJ-i7B"/>
                             <constraint firstItem="UZJ-gr-abt" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" constant="62" id="wyB-Bi-a20"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eeN-5H-lNL"/>

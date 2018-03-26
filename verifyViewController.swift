@@ -16,18 +16,30 @@ class verifyViewController: UIViewController {
     @IBOutlet weak var codeTextField: UITextField!
     @IBOutlet weak var verifyButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
+    
     @IBAction func verifyButton_TouchUpInside(_ sender: Any) {
         let code = codeTextField.text
         verifyCode(code: code!)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        verifyButton.center.x = self.view.frame.width + 300
+        verifyButton.isHidden = false
+        
+        UIView.animate(withDuration: 1.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({
+            
+            self.verifyButton.center.x = self.view.frame.width / 2
+            
+        }), completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        verifyButton.isHidden = true
         self.hideKeyboardWhenTappedAround()
-        errorLabel.isHidden = true
-       
+        verifyButton.layer.cornerRadius = 8.0
         verifyButton.backgroundColor = UIColor.lightGray
+        
     }
 
     func verifyCode (code: String) {
@@ -37,7 +49,7 @@ class verifyViewController: UIViewController {
             verificationCode: code)
         Auth.auth().signIn(with: credential) { (user: User?,error ) in
             if error != nil {
-                self.errorLabel.isHidden = false
+                self.errorLabel.text = "Please enter the verification code."
             }
             else {
             var ref: DatabaseReference
