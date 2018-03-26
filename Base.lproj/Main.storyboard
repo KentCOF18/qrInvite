@@ -40,7 +40,7 @@
                                     <action selector="signUpButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcM-Ml-svC"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-5P-XeN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number(Ex: 2161234567)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-5P-XeN">
                                 <rect key="frame" x="59" y="318" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -131,6 +131,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CGg-1C-bLH" firstAttribute="width" secondItem="jkH-wY-MBX" secondAttribute="width" id="28X-N3-xL8"/>
                             <constraint firstItem="ybh-Nn-yhJ" firstAttribute="top" secondItem="0t0-TL-6UC" secondAttribute="bottom" constant="51" id="3G1-qS-DzZ"/>
                             <constraint firstItem="CGg-1C-bLH" firstAttribute="leading" secondItem="gj0-SY-ADT" secondAttribute="leading" id="4KI-HQ-kj1"/>
                             <constraint firstAttribute="bottom" secondItem="0t0-TL-6UC" secondAttribute="bottom" constant="149" id="6Tb-iY-UGu"/>
