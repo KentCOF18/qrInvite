@@ -26,7 +26,8 @@ class verifyViewController: UIViewController {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         errorLabel.isHidden = true
-        // Do any additional setup after loading the view.
+       
+        verifyButton.backgroundColor = UIColor.lightGray
     }
 
     func verifyCode (code: String) {

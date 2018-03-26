@@ -30,57 +30,48 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="X5M-cE-oyf">
-                                <rect key="frame" x="0.0" y="467" width="375" height="110"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFW-Xz-RYL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="39"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Sign up">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="signUpButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcM-Ml-svC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH1-Gc-3DF">
-                                        <rect key="frame" x="0.0" y="74" width="375" height="36"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="b8A-Gd-DKK"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Admin">
-                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="admin_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dl-uP-l9P"/>
-                                            <segue destination="e72-1I-aZy" kind="presentation" id="dJC-Dv-Aki"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="110" id="gnc-aZ-jmp"/>
-                                </constraints>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFW-Xz-RYL">
+                                <rect key="frame" x="16" y="462" width="343" height="36"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Sign up">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcM-Ml-svC"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-5P-XeN">
                                 <rect key="frame" x="59" y="318" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH1-Gc-3DF">
+                                <rect key="frame" x="16" y="538" width="343" height="36"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Admin">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="admin_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dl-uP-l9P"/>
+                                    <segue destination="e72-1I-aZy" kind="presentation" id="dJC-Dv-Aki"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.82734892191783316" green="0.92123495581356152" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="X5M-cE-oyf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AWQ-Be-3aC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZH1-Gc-3DF" secondAttribute="trailing" constant="16" id="58J-9N-fdK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ihh-5P-XeN" secondAttribute="trailing" constant="66" id="BfS-6e-ZBw"/>
+                            <constraint firstItem="cFW-Xz-RYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Est-mB-r5M"/>
                             <constraint firstItem="ihh-5P-XeN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gie-Im-7Fw"/>
                             <constraint firstItem="gHB-Zw-YIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JWv-38-d4t"/>
+                            <constraint firstItem="ZH1-Gc-3DF" firstAttribute="top" secondItem="cFW-Xz-RYL" secondAttribute="bottom" constant="40" id="NbL-Cb-1F5"/>
                             <constraint firstItem="ihh-5P-XeN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="Oe0-Ie-NZQ"/>
                             <constraint firstItem="gHB-Zw-YIH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SGe-G5-fVm"/>
                             <constraint firstItem="gHB-Zw-YIH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Xus-HC-cHW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X5M-cE-oyf" secondAttribute="trailing" id="b3y-6W-ZqX"/>
-                            <constraint firstItem="X5M-cE-oyf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJ7-pc-sRD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X5M-cE-oyf" secondAttribute="bottom" constant="90" id="o9o-Fy-Gn3"/>
+                            <constraint firstItem="cFW-Xz-RYL" firstAttribute="top" secondItem="ihh-5P-XeN" secondAttribute="bottom" constant="114" id="e4f-J3-QyV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cFW-Xz-RYL" secondAttribute="trailing" constant="16" id="fer-7V-FUJ"/>
+                            <constraint firstItem="ZH1-Gc-3DF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vIs-r9-cdI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -162,18 +153,14 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Verify code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UZJ-gr-abt">
                                 <rect key="frame" x="62" y="318" width="250" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="35Y-QT-5xb"/>
-                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-xH-Ef3">
-                                <rect key="frame" x="37" y="428" width="300" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymn-xH-Ef3">
+                                <rect key="frame" x="62" y="428" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5BG-ta-sNt"/>
-                                    <constraint firstAttribute="width" constant="300" id="glp-Ud-O3D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <state key="normal" title="Verify">
@@ -187,7 +174,6 @@
                                 <rect key="frame" x="62" y="255" width="250" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="A5A-Cq-tVB"/>
-                                    <constraint firstAttribute="width" constant="250" id="Nof-AZ-0tC"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>

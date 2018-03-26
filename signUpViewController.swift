@@ -24,10 +24,8 @@ class signUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        adminButton.isHidden = true;
-        
-
-
+        adminButton.isHidden = true
+        signInButton.backgroundColor = UIColor.lightGray
         
         // Do any additional setup after loading the view.
     }
