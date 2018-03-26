@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class signUpViewController: UIViewController {
+class signUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var phoneNumTextField: UITextField!
@@ -24,6 +24,7 @@ class signUpViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        phoneNumTextField.delegate = self
         
         signInButton.center.x = self.view.frame.width + 300
         
@@ -42,6 +43,11 @@ class signUpViewController: UIViewController {
         adminButton.layer.cornerRadius = 8.0
         adminButton.isHidden = true
         // Do any additional setup after loading the view.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
 
 
@@ -75,6 +81,9 @@ class signUpViewController: UIViewController {
     
 
 }
+
+//called when return key pressed
+
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {
