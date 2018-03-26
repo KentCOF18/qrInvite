@@ -11,6 +11,7 @@ import FirebaseAuth
 
 class signUpViewController: UIViewController {
 
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var phoneNumTextField: UITextField!
     
     @IBAction func admin_TouchUpInside(_ sender: Any) {
@@ -57,6 +58,7 @@ class signUpViewController: UIViewController {
             PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error ) in
                 if let error = error {
                     print("Phone number error" + error.localizedDescription)
+                    self.errorLabel.text = "Please enter a valid phone number."
                 }
                 else {
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

@@ -46,6 +46,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR7-H6-Rd1">
+                                <rect key="frame" x="16" y="285" width="343" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="9wO-PP-b6f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZH1-Gc-3DF">
                                 <rect key="frame" x="16" y="538" width="343" height="36"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
@@ -61,8 +70,11 @@
                         <color key="backgroundColor" red="0.82734892191783316" green="0.92123495581356152" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZH1-Gc-3DF" secondAttribute="trailing" constant="16" id="58J-9N-fdK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BR7-H6-Rd1" secondAttribute="trailing" constant="16" id="Aty-tJ-OdI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ihh-5P-XeN" secondAttribute="trailing" constant="66" id="BfS-6e-ZBw"/>
                             <constraint firstItem="cFW-Xz-RYL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Est-mB-r5M"/>
+                            <constraint firstItem="BR7-H6-Rd1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FeM-Sp-GHt"/>
+                            <constraint firstItem="ihh-5P-XeN" firstAttribute="top" secondItem="BR7-H6-Rd1" secondAttribute="bottom" constant="8" id="GK6-iv-tXH"/>
                             <constraint firstItem="ihh-5P-XeN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Gie-Im-7Fw"/>
                             <constraint firstItem="gHB-Zw-YIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JWv-38-d4t"/>
                             <constraint firstItem="ZH1-Gc-3DF" firstAttribute="top" secondItem="cFW-Xz-RYL" secondAttribute="bottom" constant="40" id="NbL-Cb-1F5"/>
@@ -77,6 +89,7 @@
                     </view>
                     <connections>
                         <outlet property="adminButton" destination="ZH1-Gc-3DF" id="Tvj-dX-gI7"/>
+                        <outlet property="errorLabel" destination="BR7-H6-Rd1" id="NqY-yE-2RY"/>
                         <outlet property="phoneNumTextField" destination="ihh-5P-XeN" id="sxv-YD-qLl"/>
                         <outlet property="signInButton" destination="cFW-Xz-RYL" id="NQU-cq-oxl"/>
                     </connections>
