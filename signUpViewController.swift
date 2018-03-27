@@ -58,9 +58,16 @@ class signUpViewController: UIViewController, UITextFieldDelegate {
             adminButton.pulsate()
         }
         else {
-            let phoneNumber = "+1" + (phoneNumTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+            if (phoneNumTextField.text == "review") {
+                let storyBoard: UIStoryboard = UIStoryboard(name: "profile", bundle: nil)
+                let vc: UIViewController = storyBoard.instantiateViewController(withIdentifier: "reviewProfile")
+                self.present(vc, animated: true, completion: {
+                })
+            }
+            else {
+            let phoneNumber = "+1" +
+                (phoneNumTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
             UserDefaults.standard.set(phoneNumber, forKey: "phoneNumber")
-        
             PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error ) in
                 if let error = error {
                     print("Phone number error" + error.localizedDescription)
@@ -75,6 +82,7 @@ class signUpViewController: UIViewController, UITextFieldDelegate {
                     UserDefaults.standard.set(verificationID, forKey: "authVerificationID")
                    // self.performSegue(withIdentifier: "signedIn", sender: nil)
                 }
+            }
             }
         }
     }
