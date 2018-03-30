@@ -44,7 +44,7 @@
                                 <state key="normal" title="Admin"/>
                                 <connections>
                                     <action selector="adminButton_TouchUpInside:" destination="rMN-A6-Uph" eventType="touchUpInside" id="0K0-uq-PFj"/>
-                                    <segue destination="QmZ-Pu-Nz3" kind="presentation" id="bZ3-eF-DgF"/>
+                                    <segue destination="QmZ-Pu-Nz3" kind="presentation" identifier="adminSegue" id="bZ3-eF-DgF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="72.799999999999997" y="82.3088455772114"/>
         </scene>
-        <!--View Controller-->
+        <!--Admin Verify View Controller-->
         <scene sceneID="rhD-Xp-WsC">
             <objects>
-                <viewController storyboardIdentifier="verifyAdmin" id="QmZ-Pu-Nz3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="verifyAdmin" id="QmZ-Pu-Nz3" customClass="adminVerifyViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gDH-2e-vGY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,17 +94,43 @@
                                 <rect key="frame" x="138" y="400" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
+                                <connections>
+                                    <action selector="signInButton_TouchUpInside:" destination="QmZ-Pu-Nz3" eventType="touchUpInside" id="c2j-oe-sGg"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5c-k9-Ozg">
+                                <rect key="frame" x="188" y="289" width="0.0" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgO-cs-SJB">
+                                <rect key="frame" x="63" y="285" width="250" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Y5Y-cB-IFC"/>
+                                    <constraint firstAttribute="width" constant="250" id="y4z-3S-UQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uLE-2R-OMd" firstAttribute="centerX" secondItem="gDH-2e-vGY" secondAttribute="centerX" id="0PL-ch-UHv"/>
                             <constraint firstItem="y7I-pr-aTE" firstAttribute="top" secondItem="tZQ-ds-5w0" secondAttribute="top" id="40O-8q-Bwy"/>
+                            <constraint firstItem="uLE-2R-OMd" firstAttribute="top" secondItem="bgO-cs-SJB" secondAttribute="bottom" constant="8" id="MvG-Zl-N7x"/>
                             <constraint firstItem="y7I-pr-aTE" firstAttribute="centerX" secondItem="gDH-2e-vGY" secondAttribute="centerX" id="Tjy-GX-kS6"/>
                             <constraint firstItem="uLE-2R-OMd" firstAttribute="centerY" secondItem="gDH-2e-vGY" secondAttribute="centerY" id="bT5-b0-UWi"/>
+                            <constraint firstItem="bgO-cs-SJB" firstAttribute="centerX" secondItem="gDH-2e-vGY" secondAttribute="centerX" id="eE4-xB-WMh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tZQ-ds-5w0"/>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="bgO-cs-SJB" id="ylu-cG-34v"/>
+                        <outlet property="passwordTextField" destination="uLE-2R-OMd" id="2eA-En-QiA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsJ-8m-RxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

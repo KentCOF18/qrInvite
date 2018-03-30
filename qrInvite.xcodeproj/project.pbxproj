@@ -15,6 +15,7 @@
 		A32644122049E96600EECB60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32644102049E96600EECB60 /* LaunchScreen.storyboard */; };
 		A326441D2049E96600EECB60 /* qrInviteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A326441C2049E96600EECB60 /* qrInviteTests.swift */; };
 		A32644282049ECCE00EECB60 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A32644272049ECCD00EECB60 /* GoogleService-Info.plist */; };
+		A3451679206DCC87007F9279 /* adminVerifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3451678206DCC87007F9279 /* adminVerifyViewController.swift */; };
 		A35AE4212049F7370006716B /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35AE4202049F7370006716B /* signUpViewController.swift */; };
 		A3818AF6204E1ACD00DB7E37 /* verifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3818AF5204E1ACD00DB7E37 /* verifyViewController.swift */; };
 		A3D88E3B20532D780029776F /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D88E3A20532D780029776F /* profile.storyboard */; };
@@ -50,6 +51,7 @@
 		A326441C2049E96600EECB60 /* qrInviteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qrInviteTests.swift; sourceTree = "<group>"; };
 		A326441E2049E96600EECB60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32644272049ECCD00EECB60 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3451678206DCC87007F9279 /* adminVerifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminVerifyViewController.swift; sourceTree = "<group>"; };
 		A35AE4202049F7370006716B /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		A3818AF5204E1ACD00DB7E37 /* verifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyViewController.swift; sourceTree = "<group>"; };
 		A3D88E3A20532D780029776F /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A32644072049E96600EECB60 /* AppDelegate.swift */,
+				A3451678206DCC87007F9279 /* adminVerifyViewController.swift */,
 				A3D88E3E20535CE80029776F /* adminViewController.swift */,
 				A3D88E3C2053327C0029776F /* profileViewController.swift */,
 				A3D88E3A20532D780029776F /* profile.storyboard */,
@@ -369,6 +372,7 @@
 				A3818AF6204E1ACD00DB7E37 /* verifyViewController.swift in Sources */,
 				A3D88E3F20535CE80029776F /* adminViewController.swift in Sources */,
 				A32644082049E96600EECB60 /* AppDelegate.swift in Sources */,
+				A3451679206DCC87007F9279 /* adminVerifyViewController.swift in Sources */,
 				A3D88E3D2053327C0029776F /* profileViewController.swift in Sources */,
 				A35AE4212049F7370006716B /* signUpViewController.swift in Sources */,
 			);
