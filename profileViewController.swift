@@ -12,6 +12,8 @@ import FirebaseDatabase
 
 class profileViewController: UIViewController {
 
+    @IBAction func adminButton_TouchUpInside(_ sender: Any) {
+    }
     @IBOutlet weak var myProfileText: UILabel!
     @IBOutlet weak var qrImage: UIImageView!
     override func viewDidLoad() {
