@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MyPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHB-Zw-YIH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CheQR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHB-Zw-YIH">
                                 <rect key="frame" x="0.0" y="50" width="375" height="36.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
                                 <nil key="textColor"/>
@@ -40,11 +39,11 @@
                                     <action selector="signUpButton_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcM-Ml-svC"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-5P-XeN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number(Ex: 2161234567)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ihh-5P-XeN">
                                 <rect key="frame" x="59" y="318" width="250" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BR7-H6-Rd1">
                                 <rect key="frame" x="16" y="285" width="343" height="25"/>
@@ -101,7 +100,7 @@
         <!--Admin View Controller-->
         <scene sceneID="aXh-1T-wkf">
             <objects>
-                <viewController id="e72-1I-aZy" customClass="adminViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="admin" id="e72-1I-aZy" customClass="adminViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jkH-wY-MBX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,6 +130,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="CGg-1C-bLH" firstAttribute="width" secondItem="jkH-wY-MBX" secondAttribute="width" id="28X-N3-xL8"/>
                             <constraint firstItem="ybh-Nn-yhJ" firstAttribute="top" secondItem="0t0-TL-6UC" secondAttribute="bottom" constant="51" id="3G1-qS-DzZ"/>
                             <constraint firstItem="CGg-1C-bLH" firstAttribute="leading" secondItem="gj0-SY-ADT" secondAttribute="leading" id="4KI-HQ-kj1"/>
                             <constraint firstAttribute="bottom" secondItem="0t0-TL-6UC" secondAttribute="bottom" constant="149" id="6Tb-iY-UGu"/>
@@ -208,7 +208,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.82745098039215681" green="0.92156862745098034" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="eeN-5H-lNL" firstAttribute="bottom" secondItem="ymn-xH-Ef3" secondAttribute="bottom" constant="209" id="4wn-Od-GnT"/>
                             <constraint firstItem="2zi-w5-78n" firstAttribute="leading" secondItem="eeN-5H-lNL" secondAttribute="leading" constant="62" id="A3I-g7-1bA"/>

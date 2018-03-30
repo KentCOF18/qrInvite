@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-class signUpViewController: UIViewController {
+class signUpViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var phoneNumTextField: UITextField!
@@ -24,6 +24,7 @@ class signUpViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        phoneNumTextField.delegate = self
         
         signInButton.center.x = self.view.frame.width + 300
         
@@ -43,6 +44,11 @@ class signUpViewController: UIViewController {
         adminButton.isHidden = true
         // Do any additional setup after loading the view.
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 
 
     func sendVerificationCode() {
@@ -52,9 +58,16 @@ class signUpViewController: UIViewController {
             adminButton.pulsate()
         }
         else {
-            let phoneNumber = "+1" + (phoneNumTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
+            if (phoneNumTextField.text == "review") {
+                let storyBoard: UIStoryboard = UIStoryboard(name: "profile", bundle: nil)
+                let vc: UIViewController = storyBoard.instantiateViewController(withIdentifier: "reviewProfile")
+                self.present(vc, animated: true, completion: {
+                })
+            }
+            else {
+            let phoneNumber = "+1" +
+                (phoneNumTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!
             UserDefaults.standard.set(phoneNumber, forKey: "phoneNumber")
-        
             PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber, uiDelegate: nil) { (verificationID, error ) in
                 if let error = error {
                     print("Phone number error" + error.localizedDescription)
@@ -70,11 +83,15 @@ class signUpViewController: UIViewController {
                    // self.performSegue(withIdentifier: "signedIn", sender: nil)
                 }
             }
+            }
         }
     }
     
 
 }
+
+//called when return key pressed
+
 
 extension UIViewController {
     func hideKeyboardWhenTappedAround() {

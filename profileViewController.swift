@@ -12,20 +12,16 @@ import FirebaseDatabase
 
 class profileViewController: UIViewController {
 
-    @IBAction func signOut_TouchUpInside(_ sender: Any) {
-        let firebaseAuth = Auth.auth()
-        do {
-            try firebaseAuth.signOut()
-            
-        } catch let signOutError as NSError {
-            print ("Error signing out: %@", signOutError)
-        }
+    @IBOutlet weak var adminButton: UIButton!
+    @IBAction func adminButton_TouchUpInside(_ sender: Any) {
     }
     @IBOutlet weak var myProfileText: UILabel!
     @IBOutlet weak var qrImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        adminButton.backgroundColor = UIColor.lightGray
+        adminButton.layer.cornerRadius = 8.0
         getQRImage()
         
         // Do any additional setup after loading the view.

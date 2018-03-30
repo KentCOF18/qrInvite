@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class verifyViewController: UIViewController {
+class verifyViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var codeTextField: UITextField!
@@ -35,11 +35,18 @@ class verifyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        codeTextField.delegate = self
+        
         verifyButton.isHidden = true
         self.hideKeyboardWhenTappedAround()
         verifyButton.layer.cornerRadius = 8.0
         verifyButton.backgroundColor = UIColor.lightGray
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
 
     func verifyCode (code: String) {

@@ -98,13 +98,14 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         case .cancelled:
             print("Message was cancelled")
             self.dismiss(animated: true, completion: nil)
+            break;
         case .failed:
             print("Message failed")
             self.dismiss(animated: true, completion: nil)
+            break;
         case .sent:
             print("Message was sent")
             self.dismiss(animated: true, completion: nil)
-        default:
             break;
         }
     }
