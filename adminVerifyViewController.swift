@@ -10,6 +10,7 @@ import UIKit
 
 class adminVerifyViewController: UIViewController {
 
+    @IBOutlet weak var signInButon: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -31,7 +32,8 @@ class adminVerifyViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        signInButon.backgroundColor = UIColor.lightGray
+        signInButon.layer.cornerRadius = 8.0
         // Do any additional setup after loading the view.
     }
 
