@@ -81,7 +81,7 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
         let userRef = ref.child("users").child(uid!).child("url")
         let textMessage = nameTextField.text
         let urlTextMessage = textMessage?.replacingOccurrences(of: " ", with: "%20")
-        let sms = ("SMSTO:\(phone):\(urlTextMessage!)")
+        let sms = (urlTextMessage!)
         
         let phoneURL = ("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=\(sms)")
         userRef.setValue(["smsURL": phoneURL])
