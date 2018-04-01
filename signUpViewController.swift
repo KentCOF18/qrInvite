@@ -74,6 +74,7 @@ class signUpViewController: UIViewController, UITextFieldDelegate {
                     self.errorLabel.text = "Please enter a valid phone number."
                 }
                 else {
+                    UserDefaults.standard.set(phoneNumber, forKey: "phone")
                     let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                     let vc: UIViewController = storyBoard.instantiateViewController(withIdentifier: "verifyCode")
                     self.present(vc, animated: true, completion: {

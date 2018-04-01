@@ -80,10 +80,11 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
         let ref = Database.database().reference()
         let userRef = ref.child("users").child(uid!).child("url")
         let textMessage = nameTextField.text
-        let urlTextMessage = textMessage?.replacingOccurrences(of: " ", with: "%20")
-        let sms = (urlTextMessage!)
+        let name = textMessage?.replacingOccurrences(of: " ", with: "%20")
+        let phone = UserDefaults.standard.object(forKey: "phone")
+        let data = ("Name:\(name!)_Phone:\(phone!)")
         
-        let phoneURL = ("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=\(sms)")
-        userRef.setValue(["smsURL": phoneURL])
+        let phoneURL = ("https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=\(data)")
+        userRef.setValue(["qrURL": phoneURL])
     }
 }
