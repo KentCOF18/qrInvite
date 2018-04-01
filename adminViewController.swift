@@ -76,9 +76,11 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         guard let stringCodeValue = metadataObject.stringValue else { return }
         
+        // I NEED TO TEST THIS WITH TWO PHONES
         view.addSubview(codeFrame)
         // Create some label and assign returned string value to it
-        infoLabel.text = stringCodeValue
+        let name = stringCodeValue.components(separatedBy: ":")
+        infoLabel.text = name[2]
         // Perform further logic needed (ex. redirect to other ViewController)
         
     }
