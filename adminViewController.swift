@@ -50,6 +50,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
 
         // Do any additional setup after loading the view.
     }
+    var guest = "No one"
     var count = 0
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count == 0 {
@@ -76,13 +77,14 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         guard let stringCodeValue = metadataObject.stringValue else { return }
         
-        // I NEED TO TEST THIS WITH TWO PHONES
+        
         view.addSubview(codeFrame)
+        //adds
+        guest = stringCodeValue
+        
         // Create some label and assign returned string value to it
         let name = stringCodeValue.components(separatedBy: ":")
         infoLabel.text = name[2]
-        // Perform further logic needed (ex. redirect to other ViewController)
-        
     }
     
     func sendCountMessage(total: Int) {
@@ -110,6 +112,11 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             self.dismiss(animated: true, completion: nil)
             break;
         }
+    }
+    
+    func returnGuest() -> String {
+        print("Return guest called")
+        return guest
     }
 
 

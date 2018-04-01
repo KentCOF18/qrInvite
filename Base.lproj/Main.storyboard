@@ -56,7 +56,7 @@
                                 </state>
                                 <connections>
                                     <action selector="admin_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dl-uP-l9P"/>
-                                    <segue destination="Pum-Zx-22x" kind="show" id="Hja-3R-HYo"/>
+                                    <segue destination="Pum-Zx-22x" kind="presentation" id="Zig-6r-Ibr"/>
                                 </connections>
                             </button>
                         </subviews>
