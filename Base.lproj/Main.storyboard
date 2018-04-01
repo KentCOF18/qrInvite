@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Futura.ttc">
-            <string>Futura-Bold</string>
-            <string>Futura-Medium</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -62,7 +56,7 @@
                                 </state>
                                 <connections>
                                     <action selector="admin_TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Dl-uP-l9P"/>
-                                    <segue destination="e72-1I-aZy" kind="presentation" id="dJC-Dv-Aki"/>
+                                    <segue destination="Pum-Zx-22x" kind="show" id="Hja-3R-HYo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,64 +91,13 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
-        <!--Admin View Controller-->
-        <scene sceneID="aXh-1T-wkf">
+        <!--admin-->
+        <scene sceneID="Nr3-tD-Sas">
             <objects>
-                <viewController storyboardIdentifier="admin" id="e72-1I-aZy" customClass="adminViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="jkH-wY-MBX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGg-1C-bLH">
-                                <rect key="frame" x="0.0" y="20" width="375" height="415"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybh-Nn-yhJ">
-                                <rect key="frame" x="0.0" y="569" width="375" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="REq-t2-7Mn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-TL-6UC">
-                                <rect key="frame" x="0.0" y="483" width="375" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="8ro-Ta-ITm"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="CGg-1C-bLH" firstAttribute="width" secondItem="jkH-wY-MBX" secondAttribute="width" id="28X-N3-xL8"/>
-                            <constraint firstItem="ybh-Nn-yhJ" firstAttribute="top" secondItem="0t0-TL-6UC" secondAttribute="bottom" constant="51" id="3G1-qS-DzZ"/>
-                            <constraint firstItem="CGg-1C-bLH" firstAttribute="leading" secondItem="gj0-SY-ADT" secondAttribute="leading" id="4KI-HQ-kj1"/>
-                            <constraint firstAttribute="bottom" secondItem="0t0-TL-6UC" secondAttribute="bottom" constant="149" id="6Tb-iY-UGu"/>
-                            <constraint firstItem="gj0-SY-ADT" firstAttribute="trailing" secondItem="ybh-Nn-yhJ" secondAttribute="trailing" id="AqQ-TJ-4IL"/>
-                            <constraint firstItem="0t0-TL-6UC" firstAttribute="trailing" secondItem="CGg-1C-bLH" secondAttribute="trailing" id="Lkk-n5-bHV"/>
-                            <constraint firstItem="0t0-TL-6UC" firstAttribute="leading" secondItem="CGg-1C-bLH" secondAttribute="leading" id="Piv-2a-EIR"/>
-                            <constraint firstItem="gj0-SY-ADT" firstAttribute="trailing" secondItem="0t0-TL-6UC" secondAttribute="trailing" id="a1m-n8-q8X"/>
-                            <constraint firstItem="CGg-1C-bLH" firstAttribute="top" secondItem="gj0-SY-ADT" secondAttribute="top" id="gFU-05-Db9"/>
-                            <constraint firstItem="CGg-1C-bLH" firstAttribute="trailing" secondItem="gj0-SY-ADT" secondAttribute="trailing" id="i2H-A0-XqP"/>
-                            <constraint firstItem="0t0-TL-6UC" firstAttribute="top" secondItem="CGg-1C-bLH" secondAttribute="bottom" constant="48" id="jQU-qU-pfl"/>
-                            <constraint firstItem="0t0-TL-6UC" firstAttribute="leading" secondItem="gj0-SY-ADT" secondAttribute="leading" id="jfu-s1-g4l"/>
-                            <constraint firstItem="ybh-Nn-yhJ" firstAttribute="leading" secondItem="gj0-SY-ADT" secondAttribute="leading" id="lCX-yq-AGQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gj0-SY-ADT"/>
-                    </view>
-                    <connections>
-                        <outlet property="cameraView" destination="CGg-1C-bLH" id="2h6-03-nX2"/>
-                        <outlet property="counterLabel" destination="ybh-Nn-yhJ" id="ZF8-Xv-a0b"/>
-                        <outlet property="infoLabel" destination="0t0-TL-6UC" id="s1p-XK-z5k"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vmb-Ep-iYr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="admin" id="Pum-Zx-22x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETD-hm-4uX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="938.68065967016503"/>
+            <point key="canvasLocation" x="137" y="668"/>
         </scene>
         <!--Verify View Controller-->
         <scene sceneID="Fbt-hi-HqU">

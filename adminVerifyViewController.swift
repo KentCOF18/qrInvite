@@ -23,8 +23,8 @@ class adminVerifyViewController: UIViewController {
         } else {
             self.errorLabel.text = "Incorrect password. Redirecting"
             DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2), execute: {
-                let storyBoard: UIStoryboard = UIStoryboard(name: "profile", bundle: nil)
-                let vc: UIViewController = storyBoard.instantiateViewController(withIdentifier: "profile")
+                let storyBoard: UIStoryboard = UIStoryboard(name: "admin", bundle: nil)
+                let vc: UIViewController = storyBoard.instantiateViewController(withIdentifier: "admin")
                 self.show(vc, sender: nil)
             })
             
