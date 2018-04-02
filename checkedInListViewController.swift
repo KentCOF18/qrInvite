@@ -8,7 +8,7 @@
 
 import UIKit
 
-class checkedInListViewController: UITableViewController {
+class checkedInListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var guestList: UITableView! {
         didSet {
@@ -18,31 +18,19 @@ class checkedInListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guestList.delegate = self
-        guestList.dataSource = self
+        //guestList.delegate = self
+        //guestList.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        print("Number of sections")
-        return 1
+    let list = ["Milk", "Honey", "Tea"]
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return list.count
     }
     
-    var i = 1
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("With i")
-        return i
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath)
-        print("Contains name")
-        var name: String
-        i = i + 1
-        name = adminViewController().returnGuest()
-        cell.textLabel?.text = name
-        
-        return cell
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "myCell")
+        cell.textLabel?.text = list[indexPath.row]
+        return(cell)
     }
 
 

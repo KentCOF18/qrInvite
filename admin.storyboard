@@ -72,6 +72,35 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="938.68065967016503"/>
         </scene>
+        <!--List-->
+        <scene sceneID="ngy-Qz-cSl">
+            <objects>
+                <viewController id="m8b-CE-hCe" customClass="checkedInListViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="39e-JB-SLW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myCell" id="LuS-pj-qRj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LuS-pj-qRj" id="biA-2A-WeO">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="m8b-CE-hCe" id="9l5-5U-nMk"/>
+                            <outlet property="delegate" destination="m8b-CE-hCe" id="W84-y7-CMc"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="List" id="C5m-bR-lpL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIe-qg-BzI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1183.2" y="948.57571214392806"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d2r-QT-pV0">
             <objects>
@@ -84,46 +113,12 @@
                     </tabBar>
                     <connections>
                         <segue destination="Dla-qf-DMO" kind="relationship" relationship="viewControllers" id="x5f-fb-sag"/>
-                        <segue destination="vBJ-aa-72e" kind="relationship" relationship="viewControllers" id="Lqv-Yp-HVQ"/>
+                        <segue destination="m8b-CE-hCe" kind="relationship" relationship="viewControllers" id="qWm-eD-C0C"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTg-cp-GBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="593" y="164"/>
-        </scene>
-        <!--List-->
-        <scene sceneID="Se2-xq-pHA">
-            <objects>
-                <tableViewController id="vBJ-aa-72e" customClass="checkedInListViewController" customModule="qrInvite" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="500" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ztg-Ff-YYE">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" id="Ksj-sm-HV9">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ksj-sm-HV9" id="twc-sT-9dk">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="vBJ-aa-72e" id="Hvi-AE-KNP"/>
-                            <outlet property="delegate" destination="vBJ-aa-72e" id="qSS-f1-nS6"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="List" id="9BM-xG-GMp"/>
-                    <navigationItem key="navigationItem" id="4Ln-Or-7NU"/>
-                    <connections>
-                        <outlet property="guestList" destination="ztg-Ff-YYE" id="KdU-e6-UAe"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b0y-ye-FUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1084" y="934"/>
         </scene>
     </scenes>
 </document>
