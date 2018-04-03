@@ -23,10 +23,29 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        verifyButton.center.x = self.view.frame.width + 300
-        verifyButton.isHidden = false
+        verifyButton.center.x  = self.view.frame.width + 300
+        nameTextField.center.x = self.view.frame.width + 300
+        codeTextField.center.x = self.view.frame.width + 300
+        
+        nameTextField.isHidden = false
+        codeTextField.isHidden = false
+        verifyButton.isHidden  = false
         
         UIView.animate(withDuration: 1.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({
+            
+            self.nameTextField.center.x = self.view.frame.width / 2
+            
+        }), completion: nil)
+        
+        
+        
+        UIView.animate(withDuration: 1.5, delay: 0.5, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({
+            
+            self.codeTextField.center.x = self.view.frame.width / 2
+            
+        }), completion: nil)
+        
+        UIView.animate(withDuration: 1.5, delay: 1.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({
             
             self.verifyButton.center.x = self.view.frame.width / 2
             
@@ -37,7 +56,9 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         codeTextField.delegate = self
         
-        verifyButton.isHidden = true
+        verifyButton.isHidden  = true
+        codeTextField.isHidden = true
+        nameTextField.isHidden = true
         self.hideKeyboardWhenTappedAround()
         verifyButton.layer.cornerRadius = 8.0
         verifyButton.backgroundColor = UIColor.lightGray
