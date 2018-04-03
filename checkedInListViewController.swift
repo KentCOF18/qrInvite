@@ -22,13 +22,27 @@ class checkedInListViewController: UIViewController, UITableViewDelegate, UITabl
         //guestList.dataSource = self
         // Do any additional setup after loading the view.
     }
-    let list = ["Milk", "Honey", "Tea"]
+    /*
+    var guestListA: [String] = []
+    override func viewDidAppear(_ animated: Bool) {
+        var list = adminViewController().returnGuest()
+        var i = 0
+        let max = list.count
+        while(i < max) {
+            guestListA.append(list[i])
+            i = i + 1
+        }
+    }
+    */
+    var list = ["Why", "Wont", "this", "work"]
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(list.count)
         return list.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "myCell")
+        print(list[indexPath.row])
         cell.textLabel?.text = list[indexPath.row]
         return(cell)
     }

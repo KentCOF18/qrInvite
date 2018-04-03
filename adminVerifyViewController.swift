@@ -16,7 +16,7 @@ class adminVerifyViewController: UIViewController {
     
     @IBAction func signInButton_TouchUpInside(_ sender: Any) {
         let password = passwordTextField.text
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "admin", bundle: nil)
         let vc: UIViewController = storyBoard.instantiateViewController(withIdentifier: "admin")
         if (password == "kentAdmin") {
             self.show(vc, sender: nil)

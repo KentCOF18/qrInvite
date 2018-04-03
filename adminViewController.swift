@@ -6,6 +6,10 @@
 //  Copyright © 2018 Nexus. All rights reserved.
 //
 
+// Left off trying to figure out how to store the array of names
+// Need to then send that array to the listView
+// Iterate through the array in list VC and display one element per cell
+
 import UIKit
 import AVFoundation
 import MessageUI
@@ -50,7 +54,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
 
         // Do any additional setup after loading the view.
     }
-    var guest = "No one"
+    var guest = [String]()
     var count = 0
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count == 0 {
@@ -77,20 +81,20 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         guard let stringCodeValue = metadataObject.stringValue else { return }
         
-        
         view.addSubview(codeFrame)
         //adds
-        guest = stringCodeValue
-        
+        //
+        guest.append(stringCodeValue)
         // Create some label and assign returned string value to it
         let name = stringCodeValue.components(separatedBy: ":")
-        infoLabel.text = name[2]
+        let subStr = String(name[1].dropLast(6))
+        infoLabel.text = subStr
     }
     
     func sendCountMessage(total: Int) {
         let messageVC = MFMessageComposeViewController()
         
-        messageVC.body = "\(total) people have signed in";
+        messageVC.body = "\(total) people have signed in\(guest[0])";
         messageVC.recipients = ["+16147257253"]
         messageVC.messageComposeDelegate = self;
         
@@ -114,7 +118,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         }
     }
     
-    func returnGuest() -> String {
+    func returnGuest() -> [String] {
         print("Return guest called")
         return guest
     }
