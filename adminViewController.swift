@@ -56,6 +56,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         // Do any additional setup after loading the view.
     }
     var i = 0
+    var greater = 1
     var guest = [String]()
     var count = 0
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
@@ -85,10 +86,9 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         view.addSubview(codeFrame)
         //adds
-        
+       
         guest.append(stringCodeValue)
-        
-        
+    
         // Create some label and assign returned string value to it
         let name = stringCodeValue.components(separatedBy: ":")
         let subStr = String(name[1].dropLast(6))
@@ -129,7 +129,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destVC = segue.destination as! checkedInListViewController
-        destVC.guest = guest
+        destVC.guest = Array(Set(guest))
     }
 
 
