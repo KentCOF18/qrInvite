@@ -18,8 +18,12 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var nameTextField: UITextField!
     
     @IBAction func verifyButton_TouchUpInside(_ sender: Any) {
-        let code = codeTextField.text
-        verifyCode(code: code!)
+        if(nameTextField.text?.isEmpty)! {
+            errorLabel.text = "Please enter your name."
+        } else {
+            let code = codeTextField.text
+            verifyCode(code: code!)
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
