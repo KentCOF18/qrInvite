@@ -34,16 +34,18 @@ class checkedInListViewController: UIViewController, UITableViewDelegate, UITabl
         }
     }
     */
+    var guest = [String]()
     var list = ["Why", "Wont", "this", "work"]
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(list.count)
-        return list.count
+        print(guest.count)
+        return guest.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "myCell")
-        print(list[indexPath.row])
-        cell.textLabel?.text = list[indexPath.row]
+        //print(list[indexPath.row])
+        cell.textLabel?.text = guest[indexPath.row]
+        print(guest[indexPath.row])
         return(cell)
     }
 

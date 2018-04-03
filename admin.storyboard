@@ -49,7 +49,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="View List"/>
                                 <connections>
-                                    <segue destination="m8b-CE-hCe" kind="show" id="yfL-Yt-Db8"/>
+                                    <segue destination="m8b-CE-hCe" kind="show" identifier="listView" id="lKA-tK-PHQ"/>
                                 </connections>
                             </button>
                         </subviews>
