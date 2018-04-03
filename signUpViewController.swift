@@ -25,7 +25,6 @@ class signUpViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneNumTextField.delegate = self
-        
         signInButton.center.x = self.view.frame.width + 300
         
         UIView.animate(withDuration: 1.5, delay: 0.5, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({
