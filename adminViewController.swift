@@ -87,12 +87,18 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         view.addSubview(codeFrame)
         //adds
        
-        guest.append(stringCodeValue)
+        //guest.append(stringCodeValue)
     
         // Create some label and assign returned string value to it
         let name = stringCodeValue.components(separatedBy: ":")
-        let subStr = String(name[1].dropLast(6))
-        infoLabel.text = subStr
+        print(name.count)
+        if(name.count == 3) {
+            guest.append(stringCodeValue)
+            let subStr = String(name[1].dropLast(6))
+            infoLabel.text = subStr
+        } else { // this tells if it is a false code shown
+            infoLabel.text = "False code"
+        }
     }
     
     func sendCountMessage(total: Int) {
