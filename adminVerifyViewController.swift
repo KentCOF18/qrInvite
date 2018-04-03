@@ -32,6 +32,7 @@ class adminVerifyViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         signInButon.backgroundColor = UIColor.lightGray
         signInButon.layer.cornerRadius = 8.0
         // Do any additional setup after loading the view.
