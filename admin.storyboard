@@ -39,7 +39,7 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xQx-4n-kv8">
                                 <rect key="frame" x="0.0" y="28" width="375" height="375"/>
-                                <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="375" id="TV8-3Q-Qym"/>
                                 </constraints>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xQx-4n-kv8" firstAttribute="leading" secondItem="yb3-He-D2Y" secondAttribute="leading" id="04s-7a-Q1r"/>
                             <constraint firstItem="xQx-4n-kv8" firstAttribute="trailing" secondItem="yb3-He-D2Y" secondAttribute="trailing" id="3cp-co-Vqv"/>
