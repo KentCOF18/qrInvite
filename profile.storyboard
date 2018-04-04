@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMN-A6-Uph">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rMN-A6-Uph">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Profile View Controller-->
         <scene sceneID="1Sj-pu-ChD">
@@ -48,7 +53,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.82745098039999998" green="0.92156862750000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="VVm-tR-mQA" firstAttribute="centerX" secondItem="3Im-Rz-HIu" secondAttribute="centerX" id="QY6-Ba-Oxz"/>
                             <constraint firstItem="hsx-b9-vjY" firstAttribute="top" secondItem="ga6-bH-xEK" secondAttribute="top" id="aQX-RU-bAC"/>
@@ -125,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.82734892189999998" green="0.92123495580000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uLE-2R-OMd" firstAttribute="centerX" secondItem="gDH-2e-vGY" secondAttribute="centerX" id="0PL-ch-UHv"/>
                             <constraint firstItem="y7I-pr-aTE" firstAttribute="top" secondItem="tZQ-ds-5w0" secondAttribute="top" id="40O-8q-Bwy"/>
@@ -186,7 +191,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.82745098039999998" green="0.92156862750000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="45z-FD-nvB" firstAttribute="leading" secondItem="hqo-o8-WcN" secondAttribute="trailing" constant="60" id="9x1-jy-Ajf"/>
                             <constraint firstItem="45z-FD-nvB" firstAttribute="centerX" secondItem="3tt-Gc-elT" secondAttribute="centerX" id="J4g-hb-6VW"/>
@@ -208,6 +213,6 @@
         <image name="qrcode" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bZ3-eF-DgF"/>
+        <segue reference="ANw-nx-kPT"/>
     </inferredMetricsTieBreakers>
 </document>
