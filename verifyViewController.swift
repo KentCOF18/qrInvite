@@ -35,6 +35,25 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
         codeTextField.isHidden = false
         verifyButton.isHidden  = false
         
+        let codeLayerWidth = codeTextField.frame.width
+        codeTextField.tintColor = UIColor.lightText
+        codeTextField.textColor = UIColor.black
+        codeTextField.attributedPlaceholder = NSAttributedString(string: codeTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
+        let bottomLayerCode = CALayer()
+        bottomLayerCode.frame = CGRect(x: 0, y: 28, width: codeLayerWidth, height: 0.6)
+        bottomLayerCode.backgroundColor = UIColor.white.cgColor
+        codeTextField.layer.addSublayer(bottomLayerCode)
+        
+        
+        let nameLayerWidth = nameTextField.frame.width
+        nameTextField.tintColor = UIColor.lightText
+        nameTextField.textColor = UIColor.black
+        nameTextField.attributedPlaceholder = NSAttributedString(string: nameTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
+        let bottomLayerName = CALayer()
+        bottomLayerCode.frame = CGRect(x: 0, y: 28, width: nameLayerWidth, height: 0.6)
+        bottomLayerCode.backgroundColor = UIColor.white.cgColor
+        nameTextField.layer.addSublayer(bottomLayerName)
+        
         UIView.animate(withDuration: 1.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({
             
             self.nameTextField.center.x = self.view.frame.width / 2
