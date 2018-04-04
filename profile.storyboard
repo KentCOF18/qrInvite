@@ -146,7 +146,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SsJ-8m-RxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="476" y="868"/>
+            <point key="canvasLocation" x="474" y="858"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="I1T-nw-MWN">
@@ -208,6 +208,6 @@
         <image name="qrcode" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ANw-nx-kPT"/>
+        <segue reference="bZ3-eF-DgF"/>
     </inferredMetricsTieBreakers>
 </document>

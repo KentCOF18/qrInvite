@@ -24,6 +24,22 @@ class signUpViewController: UIViewController, UITextFieldDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+       // phoneNumTextField.attributedPlaceholder = NSAttributedString(string: "placeholder text", attributes: [NSAttributedStringKey.foregroundColor: UIColor.black])
+
+        
+        let numberLayerWidth = phoneNumTextField.frame.width
+        phoneNumTextField.tintColor = UIColor.lightText
+        phoneNumTextField.textColor = UIColor.black
+        phoneNumTextField.attributedPlaceholder = NSAttributedString(string: phoneNumTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
+        let bottomLayerNumber = CALayer()
+        bottomLayerNumber.frame = CGRect(x: 0, y: 28, width: numberLayerWidth, height: 0.6)
+        bottomLayerNumber.backgroundColor = UIColor.white.cgColor
+        phoneNumTextField.layer.addSublayer(bottomLayerNumber)
+        
+        
+        
+        
         phoneNumTextField.delegate = self
         signInButton.center.x = self.view.frame.width + 300
         
