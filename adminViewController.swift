@@ -61,7 +61,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     var count = 0
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         if metadataObjects.count == 0 {
-            print("No Input Detected")
+            //("No Input Detected")
             count = count + 1
             if(count % 10 == 0) {
                 sendCountMessage(total: count)
@@ -91,7 +91,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     
         // Create some label and assign returned string value to it
         let name = stringCodeValue.components(separatedBy: ":")
-        print(name.count)
+        //print(name.count)
         if(name.count == 3) {
             guest.append(stringCodeValue)
             let subStr = String(name[1].dropLast(6))
@@ -104,7 +104,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     func sendCountMessage(total: Int) {
         let messageVC = MFMessageComposeViewController()
         
-        messageVC.body = "\(total) people have signed in\(guest[0])";
+        messageVC.body = "\(total) people have signed in";
         messageVC.recipients = ["+16147257253"]
         messageVC.messageComposeDelegate = self;
         
@@ -129,7 +129,7 @@ class adminViewController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
     }
     
     func returnGuest() -> [String] {
-        print("Return guest called\(guest.count)")
+     //   print("Return guest called\(guest.count)")
         return guest
     }
     
