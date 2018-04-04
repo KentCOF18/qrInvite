@@ -41,7 +41,7 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
         codeTextField.attributedPlaceholder = NSAttributedString(string: codeTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
         let bottomLayerCode = CALayer()
         bottomLayerCode.frame = CGRect(x: 0, y: 28, width: codeLayerWidth, height: 0.6)
-        bottomLayerCode.backgroundColor = UIColor.white.cgColor
+        bottomLayerCode.backgroundColor = UIColor.black.cgColor
         codeTextField.layer.addSublayer(bottomLayerCode)
         
         
@@ -50,8 +50,8 @@ class verifyViewController: UIViewController, UITextFieldDelegate {
         nameTextField.textColor = UIColor.black
         nameTextField.attributedPlaceholder = NSAttributedString(string: nameTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
         let bottomLayerName = CALayer()
-        bottomLayerCode.frame = CGRect(x: 0, y: 28, width: nameLayerWidth, height: 0.6)
-        bottomLayerCode.backgroundColor = UIColor.white.cgColor
+        bottomLayerName.frame = CGRect(x: 0, y: 28, width: nameLayerWidth, height: 0.6)
+        bottomLayerName.backgroundColor = UIColor.black.cgColor
         nameTextField.layer.addSublayer(bottomLayerName)
         
         UIView.animate(withDuration: 1.5, delay: 0.0, usingSpringWithDamping: 1.0, initialSpringVelocity: 5.0, options: .curveEaseOut, animations: ({

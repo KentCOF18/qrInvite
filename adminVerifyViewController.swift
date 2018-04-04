@@ -35,6 +35,16 @@ class adminVerifyViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
         signInButon.backgroundColor = UIColor.lightGray
         signInButon.layer.cornerRadius = 8.0
+        
+        
+        let codeLayerWidth = passwordTextField.frame.width
+        passwordTextField.tintColor = UIColor.lightText
+        passwordTextField.textColor = UIColor.black
+        passwordTextField.attributedPlaceholder = NSAttributedString(string: passwordTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
+        let bottomLayerCode = CALayer()
+        bottomLayerCode.frame = CGRect(x: 0, y: 28, width: codeLayerWidth, height: 0.6)
+        bottomLayerCode.backgroundColor = UIColor.black.cgColor
+        passwordTextField.layer.addSublayer(bottomLayerCode)
         // Do any additional setup after loading the view.
     }
 
