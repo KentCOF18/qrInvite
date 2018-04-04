@@ -34,7 +34,7 @@ class signUpViewController: UIViewController, UITextFieldDelegate {
         phoneNumTextField.attributedPlaceholder = NSAttributedString(string: phoneNumTextField.placeholder!, attributes: [NSAttributedStringKey.foregroundColor: UIColor.darkGray])
         let bottomLayerNumber = CALayer()
         bottomLayerNumber.frame = CGRect(x: 0, y: 28, width: numberLayerWidth, height: 0.6)
-        bottomLayerNumber.backgroundColor = UIColor.white.cgColor
+        bottomLayerNumber.backgroundColor = UIColor.black.cgColor
         phoneNumTextField.layer.addSublayer(bottomLayerNumber)
         
         
